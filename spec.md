@@ -33,5 +33,16 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
 1. Phase 1: Structured Storage
     1. Generate Pydantic schema for:
         * User
+            - Email
+            - Password
+            - Financial Philosophy
+                - The financial philosophy should be a user-submitted document detailing the way the user thinks about finances and the user's financial goals. Examples for sections that might be included in the document could be "I'm young, single, and without dependents; at this point in my life I'm willing to take reasonable risks for large financial gain" or "Avoiding debt is the most important financial principle for me."
+            - Accounts (dictionary that maps to Account data types)
+            - Birthdate -> Derived Age (optional)
+            - Dependents (List of dependent types)
+            - Assets (List of Asset types)
+            - Net Worth (Derived)
         * Transaction
         * Account
+        * Dependent
+        * Asset
