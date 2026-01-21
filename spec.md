@@ -33,6 +33,7 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
 1. Phase 1: Structured Storage
     1. Generate Pydantic schema for:
         * User
+            - Id
             - Email
             - Password
             - Financial Philosophy
@@ -43,6 +44,16 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
             - Assets (List of Asset types)
             - Net Worth (Derived)
         * Transaction
+            - Transaction Id
+            - Account Id
+            - Date
+            - Name (Name of the transaction given by the financial institution)
+            - Amount
+            - Currency (ISO currency code, default to USD)
+            - Direction (Inflow or Outflow)
+            - Status (Pending, Posted)
+            - Category (Dining, Groceries, Rent, Clothing, etc)
+            - Transfer (Boolean determining if the transaction is a transfer within the user's own accounts)
         * Account
         * Dependent
         * Asset
