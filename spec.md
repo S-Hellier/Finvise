@@ -27,3 +27,11 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
 
 * Validation:
     - Pydantic: Ensure formatting consistency for LLMs
+
+## Roadmap:
+
+1. Phase 1: Structured Storage
+    1. Generate Pydantic schema for:
+        * User
+        * Transaction
+        * Account
