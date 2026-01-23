@@ -114,4 +114,7 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
     2. Retrieval Logic:
         * Implement a Hybrid Search retriever
             - Semantic meaning is certainly important when dealing with financial concepts, but keywords are extremely important as well. If a user is looking for information on a 401k or Roth IRA, documents that explicitly discuss these terms should be prioritized
-    
+    3. Context-Augmented Q&A functionality (Basic RAG)
+        * Create basic LangChain loop that answers straight forward knowledge questions based on uploaded knowledge base.
+            - Examples might include "What is a 401k?", "Are stocks generally riskier that bonds?", "In what situations would it be advisable to go into debt?", or "How does an HSA account work?"
+            - More targeted examples based on the specific uploaded documents might be "What would a combined financial philosophy between Warren Buffett and Dave Ramsey have to say about investing in individual stocks over ETFs?" or "Does my grandfather's financial philosophy (found in an uploaded document) align with the teachings of 'Rich Dad Poor Dad'?"
