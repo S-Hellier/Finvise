@@ -103,3 +103,12 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
     3. SQL Tooling
         * Create Python functionality that allows an LLM to easily inspect the database schema and execute read-only queries
             - This may include functionality like listing tables, columns, and their descriptions
+
+2. Phase 2: Knowledge RAG (Unstructured Data)
+    Give the LLM the foundational financial knowledge, both from generally available sources and the user's personal financial preferences, so that it can effectively answer questions in a personally and wisely fine-tuned manner
+    1. Vector Ingestion: 
+        * Set up ChromaDB database for embeddings
+        * Implement a pipeline to chunk and embed financial PDFs and other common document types
+            - Chunking should be done in a semantically meaningful way in accordance to the most up-to-date industry best-practices
+            - User-submitted documents should be supported. For example, if there is a document on financial philosophy that the user finds particularly compelling, they can input this document and have it be embedded in the knowledge base. 
+    
