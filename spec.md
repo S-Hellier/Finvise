@@ -118,3 +118,17 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
         * Create basic LangChain loop that answers straight forward knowledge questions based on uploaded knowledge base.
             - Examples might include "What is a 401k?", "Are stocks generally riskier that bonds?", "In what situations would it be advisable to go into debt?", or "How does an HSA account work?"
             - More targeted examples based on the specific uploaded documents might be "What would a combined financial philosophy between Warren Buffett and Dave Ramsey have to say about investing in individual stocks over ETFs?" or "Does my grandfather's financial philosophy (found in an uploaded document) align with the teachings of 'Rich Dad Poor Dad'?"
+
+3. Phase 3: LangGraph Orchestration
+    This phase provides the transition from simple chains to an actual agentic state machine
+    1. State Definition:
+        * Define `GraphState` using TypedDict to track message history, retrieved data, and intermediate SQL results.
+    2. Router Node
+        * Build logic that decides query needs
+            - Do I need to query the SQL DB?
+            - Do I need to query the vector DB?
+            - Do I need to perform a calculation?
+    3. Integrate Tools
+        * Bind SQL tooling, calculator, and RAG retriever as tools that the Agent can call. 
+        * The calculator should be a Python module that handles calculations separately from the LLM.
+            - Should include functions for calculating compound interest, estimating taxes, a SQL aggregator for calculations within the SQLite Database, etc.
