@@ -70,4 +70,11 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
         * AccountSubType (ENUM)
             - Checking, Saving, Credit Card, IRA, 401K, Mortgage, etc.
         * Dependent
+            - Id
+            - Name
+            - Relationship (UserRelationshipType)
+            - Birthdate (Derive Age)
+            - Major Expenses (List of 'Tags' to be used by the model, including things like Daycare, College Fund, Tuition, Health Insurance, etc)
+        * UserRelationshipType (ENUM)
+            - Child, Partner, Spouse, Parent, Other
         * Asset
