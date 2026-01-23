@@ -100,3 +100,6 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
         * When a user uploads a CSV or the app recieves JSON data from Plaid, this Pandas functionality should complete the pipeline that transforms this financial information into readily accessible and easily digestible user information for the model to work with
         * This ingestor should handle common CSV conventions for organizing data from financial information, including transforming dates to the proper format, Interpreting column names to their proper semantic meaning as defined by the SQLite databse, and extrapolating meaning from the column items if needed.
         * LLM assistance should be implemented for this data processing component. A Small model should do the job of interpreting the relationships between the ingested column names and their representation in the database, as well as extrapolating as much information as possible from column items for use in the database
+    3. SQL Tooling
+        * Create Python functionality that allows an LLM to easily inspect the database schema and execute read-only queries
+            - This may include functionality like listing tables, columns, and their descriptions
