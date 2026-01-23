@@ -65,7 +65,9 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
              - Credit Limit (If applicable)
              - Currency (Default USD)
              - Institution ID
-        * AccountType
-        * AccountSubType
+        * AccountType (ENUM)
+            - Depository, Credit, Investment, Loan, Other
+        * AccountSubType (ENUM)
+            - Checking, Saving, Credit Card, IRA, 401K, Mortgage, etc.
         * Dependent
         * Asset
