@@ -111,4 +111,7 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
         * Implement a pipeline to chunk and embed financial PDFs and other common document types
             - Chunking should be done in a semantically meaningful way in accordance to the most up-to-date industry best-practices
             - User-submitted documents should be supported. For example, if there is a document on financial philosophy that the user finds particularly compelling, they can input this document and have it be embedded in the knowledge base. 
+    2. Retrieval Logic:
+        * Implement a Hybrid Search retriever
+            - Semantic meaning is certainly important when dealing with financial concepts, but keywords are extremely important as well. If a user is looking for information on a 401k or Roth IRA, documents that explicitly discuss these terms should be prioritized
     
