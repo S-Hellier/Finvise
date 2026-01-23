@@ -55,5 +55,17 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
             - Category (Dining, Groceries, Rent, Clothing, etc)
             - Transfer (Boolean determining if the transaction is a transfer within the user's own accounts)
         * Account
+             - Id
+             - Name (Account name given by user)
+             - Last 4 Digits of Account Number
+             - Type (AccountType item)
+             - Subtype (AccountSubtype item)
+             - Current Balance
+             - Available Balance (Funds available for immediate withdraw)
+             - Credit Limit (If applicable)
+             - Currency (Default USD)
+             - Institution ID
+        * AccountType
+        * AccountSubType
         * Dependent
         * Asset
