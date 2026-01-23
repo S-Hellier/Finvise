@@ -78,3 +78,17 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
         * UserRelationshipType (ENUM)
             - Child, Partner, Spouse, Parent, Other
         * Asset
+            - Id
+            - Account Id (Account holding the asset)
+            - Symbol (Ticker symbol if a stock)
+            - Name (Colloquial name of the asset)
+            - Class (AssetClass Object)
+            - Quantity (Number of units of the asset, should be float)
+            - Cost (Amount paid to acquire the asset)
+            - Current Price (Last known market price)
+            - Last Updated (Date attribute reflecting when the market price was last updated)
+            - Derived Market Value (Price * Quantity)
+            - Derived Net (Market Value - Cost)
+            - Derived Percent Return
+        * AssetClass (ENUM)
+            - Equity, Fixed, Crypto, Real Estate, Commodity (Gold, Silver, etc), Collectible (Art, Watches, Antiques, etc)
