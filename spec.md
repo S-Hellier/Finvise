@@ -28,8 +28,9 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
 * Validation:
     - Pydantic: Ensure formatting consistency for LLMs
 
-* Account Integration
-    - Plaid will handle integration with existing accounts
+* APIs
+    - Plaid for real, personal banking integration
+    - yfinance for real-time market data
 
 ## Roadmap:
 
