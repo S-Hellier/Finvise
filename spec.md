@@ -132,3 +132,11 @@ Finvise will use an LLM in combination with Retrieval Augmented Generation techn
         * Bind SQL tooling, calculator, and RAG retriever as tools that the Agent can call. 
         * The calculator should be a Python module that handles calculations separately from the LLM.
             - Should include functions for calculating compound interest, estimating taxes, a SQL aggregator for calculations within the SQLite Database, etc.
+
+4. Phase 4: Real World Integration
+    1. Market Data Integration
+        * Build a tool using `yfinance` to fetch real-time market data.
+    2. Plaid Integration
+        * Implement Plaid client to fetch up-to-date personal Account data, including from Credit Cards, Bank Accounts, Investment accounts, etc.
+    3. LangGraph Validation Checker
+        * Implement LangGraph node to validate any math performed to avoid tokenization errors and similar
